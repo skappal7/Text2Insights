@@ -17,6 +17,40 @@ from textblob import TextBlob
 # Set page configuration
 st.set_page_config(page_title="Text and Sentiment Preliminary Analysis", layout="wide")
 
+# Custom CSS for a modern design
+st.markdown("""
+    <style>
+        .css-1d391kg {
+            background-color: #333333 !important;
+            color: #FAFAFA !important;
+        }
+        .css-145kmo2 {
+            background-color: #07B1FC !important;
+            color: #FAFAFA !important;
+        }
+        .css-18e3th9 {
+            color: #333333 !important;
+        }
+        .stButton>button {
+            background-color: #07B1FC !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 5px !important;
+        }
+        .stNumberInput>div>input {
+            background-color: #FAFAFA !important;
+            color: #333333 !important;
+        }
+        .stTextInput>div>input {
+            background-color: #FAFAFA !important;
+            color: #333333 !important;
+        }
+        .css-1aumxhk {
+            color: #FAAF3B !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Load stopwords
 stop_words = set(stopwords.words('english'))
 
