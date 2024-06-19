@@ -20,16 +20,12 @@ st.set_page_config(page_title="Text and Sentiment Preliminary Analysis", layout=
 # Custom CSS for a modern design
 st.markdown("""
     <style>
-        .css-1d391kg {
-            background-color: #333333 !important;
-            color: #FAFAFA !important;
+        /* Apply primary color to various elements */
+        .stApp {
+            background-color: #333333;
         }
-        .css-145kmo2 {
-            background-color: #07B1FC !important;
+        .css-1d391kg, .css-145kmo2, .css-18e3th9 {
             color: #FAFAFA !important;
-        }
-        .css-18e3th9 {
-            color: #333333 !important;
         }
         .stButton>button {
             background-color: #07B1FC !important;
@@ -37,16 +33,29 @@ st.markdown("""
             border: none !important;
             border-radius: 5px !important;
         }
-        .stNumberInput>div>input {
-            background-color: #FAFAFA !important;
-            color: #333333 !important;
-        }
-        .stTextInput>div>input {
+        .stNumberInput>div>input, .stTextInput>div>input {
             background-color: #FAFAFA !important;
             color: #333333 !important;
         }
         .css-1aumxhk {
             color: #FAAF3B !important;
+        }
+        .css-2trqyj {
+            background-color: #06516F !important;
+            color: #FAFAFA !important;
+        }
+        .css-14xtw13 {
+            background-color: #0098DB !important;
+            color: #FAFAFA !important;
+        }
+        .css-1nvht2k {
+            color: #979797 !important;
+        }
+        /* Add custom title styling */
+        .css-145kmo2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #07B1FC;
         }
     </style>
 """, unsafe_allow_html=True)
