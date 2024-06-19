@@ -20,42 +20,83 @@ st.set_page_config(page_title="Text and Sentiment Preliminary Analysis", layout=
 # Custom CSS for a modern design
 st.markdown("""
     <style>
-        /* Apply primary color to various elements */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
         .stApp {
-            background-color: #333333;
+            background-color: #f0f2f6;
         }
-        .css-1d391kg, .css-145kmo2, .css-18e3th9 {
-            color: #FAFAFA !important;
+        
+        .sidebar .sidebar-content {
+            background-color: #07B1FC;
+            color: white;
         }
+
+        .css-145kmo2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #07B1FC;
+        }
+
+        .css-18e3th9 {
+            color: #333333 !important;
+        }
+
         .stButton>button {
-            background-color: #07B1FC !important;
+            background-color: #06516F !important;
             color: white !important;
             border: none !important;
             border-radius: 5px !important;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
         }
+
+        .stButton>button:hover {
+            background-color: #04A6ED !important;
+        }
+
         .stNumberInput>div>input, .stTextInput>div>input {
-            background-color: #FAFAFA !important;
+            background-color: #ffffff !important;
             color: #333333 !important;
+            border: 1px solid #d1d9e6;
+            border-radius: 5px !important;
         }
+
+        .stTextInput>div>label {
+            font-weight: 600;
+            color: #333333;
+        }
+
         .css-1aumxhk {
             color: #FAAF3B !important;
         }
+
         .css-2trqyj {
             background-color: #06516F !important;
             color: #FAFAFA !important;
         }
+
         .css-14xtw13 {
             background-color: #0098DB !important;
             color: #FAFAFA !important;
         }
+
         .css-1nvht2k {
             color: #979797 !important;
         }
-        /* Add custom title styling */
-        .css-145kmo2 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #07B1FC;
+
+        .css-1d391kg, .css-145kmo2, .css-18e3th9 {
+            color: #333333 !important;
+        }
+
+        .block-container {
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 """, unsafe_allow_html=True)
