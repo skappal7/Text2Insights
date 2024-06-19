@@ -98,6 +98,18 @@ st.markdown("""
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        .stTabs [role="tablist"] .stTab {
+            background-color: #07B1FC !important;
+            color: white !important;
+            border: none !important;
+        }
+
+        .stTabs [role="tablist"] .stTab[aria-selected="true"] {
+            background-color: #06516F !important;
+            color: white !important;
+            border: none !important;
+        }
     </style>
 """, unsafe_allow_html=True)
 
